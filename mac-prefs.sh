@@ -52,7 +52,9 @@ defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
 # Make the $HOME folder the default for new Finder windows
-defaults write com.apple.finder NewWindowTarget = PfHm;
+# Commenting this next one out, as it throws an error on MacOS 12.4
+# 2022-07-15 17:32:11.460 defaults[6065:284436] Unexpected argument PfHm; leaving defaults unchanged.
+# defaults write com.apple.finder NewWindowTarget = PfHm;
 defaults write com.apple.finder NewWindowTargetPath "file://${HOME}/"
 
 # Sort folders to the top
