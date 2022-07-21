@@ -114,6 +114,9 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 # Disable "natural" scrolling, as it's unnatural
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
+# Enable three-finger drag on trackpad to move windows
+defaults write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
+
 # Set Finder's sidebar icon size to "small"
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 
